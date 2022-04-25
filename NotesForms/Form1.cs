@@ -9,7 +9,7 @@ namespace NotesForms
 		{
 			InitializeComponent();
 			SQLiteDataReader sql_read;
-			SQLiteConnection con = new SQLiteConnection("Data Source=C:\\Users\\One\\Desktop\\IT Hub\\NotesForms\\NotesForms\\bin\\Debug\\net6.0-windows\\Notes.db");
+			SQLiteConnection con = new SQLiteConnection("Data Source=Notes.db");
 			con.Open();
 
 			listBox1.Items.Clear();
@@ -30,7 +30,7 @@ namespace NotesForms
 		private void button1_Click(object sender, EventArgs e)
 		{
 			SQLiteDataReader sql_read;
-			SQLiteConnection con = new SQLiteConnection("Data Source=C:\\Users\\One\\Desktop\\IT Hub\\NotesForms\\NotesForms\\bin\\Debug\\net6.0-windows\\Notes.db");
+			SQLiteConnection con = new SQLiteConnection("Data Source=Notes.db");
 			con.Open();
 			SQLiteCommand sql = con.CreateCommand();
 
@@ -78,7 +78,7 @@ namespace NotesForms
 			{
 				SQLiteDataReader sql_read;
 				string curItem = listBox1.SelectedItem.ToString();
-				SQLiteConnection con = new SQLiteConnection("Data Source=C:\\Users\\One\\Desktop\\IT Hub\\NotesForms\\NotesForms\\bin\\Debug\\net6.0-windows\\Notes.db");
+				SQLiteConnection con = new SQLiteConnection("Data Source=Notes.db");
 				con.Open();
 
 				SQLiteCommand sql = con.CreateCommand();
@@ -111,7 +111,7 @@ namespace NotesForms
 			if(result == DialogResult.Yes)
 			{
 				SQLiteDataReader sql_read;
-				SQLiteConnection con = new SQLiteConnection("Data Source=C:\\Users\\One\\Desktop\\IT Hub\\NotesForms\\NotesForms\\bin\\Debug\\net6.0-windows\\Notes.db");
+				SQLiteConnection con = new SQLiteConnection("Data Source=Notes.db");
 				con.Open();
 				SQLiteCommand sql = con.CreateCommand();
 
@@ -141,7 +141,7 @@ namespace NotesForms
 		private void button3_Click(object sender, EventArgs e)
 		{
 			SQLiteDataReader sql_read;
-			SQLiteConnection con = new SQLiteConnection("Data Source=C:\\Users\\One\\Desktop\\IT Hub\\NotesForms\\NotesForms\\bin\\Debug\\net6.0-windows\\Notes.db");
+			SQLiteConnection con = new SQLiteConnection("Data Source=Notes.db");
 			con.Open();
 			SQLiteCommand sql = con.CreateCommand();
 			string title = textBox2.Text;
